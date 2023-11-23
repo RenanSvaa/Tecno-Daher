@@ -1,3 +1,5 @@
+@import url(main.css);
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -6,7 +8,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    
     z-index: 1000;  
 }
 .logotipo {
@@ -73,3 +75,19 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+.eletrica {
+    margin-top: 86px;
+    width: 100%;
+    position: relative;
+}
+
+.empresa {
+    height: 1000px;
+    width: 100%;
+    background-color: #012b4c;
+    margin-top: 180px;
+}
+
+.titulo {
+    text-align: center;
+}
