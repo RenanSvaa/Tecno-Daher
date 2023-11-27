@@ -1,37 +1,31 @@
-@import url(main.css);
+@import "login.css";
 
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;    
-    z-index: 1000;  
+    height: 50px;
+    z-index: 900;  
 }
+
 .logotipo {
     padding-left: 5px;
-    height: 85px;
-    width: 85px;
+    height: 75px;
+    width: 110px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #012b4c; /* Azul escuro */
-    padding: 15px;
-}
-
-.nav {
-    position: fixed;
-}
-
-.logo img {
-    max-width: 100%;
-    height: auto;
+    background-color: #0d214f; /* Azul escuro */
+    padding: 5px;
 }
 
 nav ul {
@@ -57,8 +51,23 @@ nav a:hover {
     color: #3498db; /* Azul claro ao passar o mouse */
 }
 
+
+
+.titulo {
+    text-align: center;
+    color: #fff; /* Branco */
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.quem-somos {
+    margin-top: 50px;
+    text-align: center;
+    color: #0d214f;
+}
+
 .content {
-    margin: 20px;
+    margin: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -66,7 +75,19 @@ nav a:hover {
 .company-info,
 .experience-info,
 .mission-info {
+    border-radius: 10px;
     width: 30%; /* Ajuste conforme necessário */
+    background-color: #0d214f;
+    color: #fff; /* Branco */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.company-info h2,
+.experience-info h2,
+.mission-info h2 {
+    border-bottom: 1px solid #fff; /* Branco */
+    padding-bottom: 10px;
 }
 
 .company-info p,
@@ -75,19 +96,177 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.eletrica {
-    margin-top: 86px;
-    width: 100%;
+.company-info_titulo {
+    text-align: center;
+}
+
+.imgPrincipal {
     position: relative;
 }
 
-.empresa {
-    height: 1000px;
-    width: 100%;
-    background-color: #012b4c;
-    margin-top: 180px;
+.nomeEmp {
+    font-size: 100px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    bottom: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Branco */
 }
 
-.titulo {
+.subTit {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    color: #fff; /* Branco */
+}
+
+.eletrica {
+    width: 100%;
+}
+
+.btn {
+    width: 11%;
+    height: 7%;
+    padding: 14px;
+    font-weight: 800;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: blue;
+    box-sizing: border-box;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Branco */
+}
+
+/* Adicione isso ao seu arquivo styles.css */
+
+
+.produtos {
+    margin-top: 50px;
+    text-align: center;
+    color: #0d214f;
+}
+
+.manutencao-eletrica {
+    width: 30%; /* Ajuste conforme necessário */
+    height: 80%;
+    border-radius: 10px;
+    background-color: #0d214f;
+    color: #fff; /* Branco */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.txt-manutencao-eletrica {
+    text-align: center;
+    color: #ffffff; /* Branco */
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.manutencao-eletrica, h2 {
+border-bottom: 1px solid #ffffff; /* Branco */
+padding-bottom: 10px;
+}
+
+.img-manutencao-eletrica {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+}
+
+.subTit_manutencao-eletrica {
+    color: #ffffff;
+}
+
+.rodape {
+    background-color: #0d214f; /* Azul escuro */
+    color: #fff; /* Branco */
+    text-align: center;
+    padding: 30px;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+}
+
+.icone {
+    margin: 0 10px;
+    border-radius: 6px;
+}
+
+.icone img {
+    background-color: white;
+    border-radius: 5px;
+    width: 30px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+}
+
+.icon {
+    color: #0d214f;
+}
+
+.servicos {
+    margin-top: 50px;
+    text-align: center;
+    color: #0d214f;
+}
+
+.M-corretiva {
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.M-disjuntores {
+    height: 436px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.M-preventiva {
+    height: 375px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.konteiner {
+    margin: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato {
+    background-color: #0d214f;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ctt {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 50px;
 }
